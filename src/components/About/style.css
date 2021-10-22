@@ -1,0 +1,135 @@
+
+    .about{
+        height: 100vh;
+        display: flex;
+        align-items:center;
+    }
+    .aboutleft{
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%
+    }
+    .aboutright{
+        flex:1
+    }
+    .aboutcard.bg{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: grey;
+        
+       
+    }
+    .aboutcard{
+        width: 60%;
+        height: 70vh;
+        border-radius:30px;
+        position: relative;
+        overflow:hidden;
+        
+       
+
+    }
+  
+
+    .aboutimg{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        
+ 
+      
+    }
+    .about-contact{
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 10px;
+    }
+.about-title{
+    font-family: 'Poppins', sans-serif;
+}
+.about-sub{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+.about-desc{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.about-award{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 8px; */
+}
+.about-icons{
+    font-size:30px;
+}
+.github{
+    font-family: 'Poppins', sans-serif;
+    /* margin-right: 20px; */
+    padding-right: 45px;
+    font-weight: bold;
+}
+.facebook{
+    font-family: 'Poppins', sans-serif;
+    padding-right: 45px;
+    font-weight: bold;
+}
+.insta{
+    font-family: 'Poppins', sans-serif;
+    padding-right: 45px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px){
+    .about{
+        flex-direction:column;
+        text-align: center;
+        margin-top: -80px;
+    }
+    .aboutleft{
+        width: 100%;
+    }
+    .aboutright{
+        width: 90%;
+    }
+    .aboutcard{
+        height: 30vh;
+        /* margin-right: 50px; */
+        border-radius: 10px;
+        box-shadow: -1px 2px 5px 4px rgba(0,0,0,0.23);
+        -webkit-box-shadow: -1px 2px 5px 4px rgba(0,0,0,0.23);
+        -moz-box-shadow: -1px 2px 5px 4px rgba(0,0,0,0.23);
+    }
+   
+     .aboutcard.bg{
+        display: none;
+    }
+    .about-title{
+        margin-top: -50px;
+        /* margin-right: 50px; */
+
+    }
+    .about-sub{
+        
+       
+        text-align:center;
+        font-size:16px;
+        /* margin-right: 50px; */
+    }
+    .about-desc{
+      
+        align-items: center;
+        text-align:center;
+        /* overflow: hidden; */
+        font-size:16px;
+        /* margin-right: 55px; */
+        
+    }
+    .about-award,.about-contact{
+        display: none;
+    }
+}

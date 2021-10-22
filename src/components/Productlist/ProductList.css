@@ -1,0 +1,43 @@
+.product-list{
+    padding:50px 100px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align:center;
+}
+.product-texts{
+    width:65%;
+}
+
+.product-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size:50px;
+}
+
+.product-desc{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0px;
+}
+
+.product-projectlist{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:480px){
+    .product-list{
+        padding: 10px;
+        /* margin-right: 60px; */
+        margin-top: -40px;
+    }
+    .product-texts{
+        width: 100%;
+        
+    }
+    .product-desc{
+        display: none;
+    }
+}
